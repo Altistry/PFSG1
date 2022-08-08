@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="FR">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<link rel="stylesheet" type="text/css" href="style/locomotive-scroll.css">
+	<title> SARAH GARRAUD </title>
+</head>
+<body>
+
+<div data-scroll-container>	
+	<div class="container">
+		 	<ul class="menu">
+			 	<li> <a href="#">PRINT</a> </li>
+			 	<li><a href="#">DIGITAL</a> </li>
+			 	<li><a href="#">PHOTO</a> </li>
+			 	<li><a href="#">ABOUT</a> </li>
+			</ul>
+	</div>
+
+	<header>
+		<h1>
+			<a href="#">SARAH GARRAUD</a>
+			<div class="menulogo">
+			</div>
+		</h1>
+	</header>
+
+	<div class="index">
+
+
+		<div class="projet1">
+			<div class="itemBox print">
+				<a href="#" class="affichejpo">
+				<img src="import/index/affichejpo.jpg" class="imageproj1" data-scroll data-scroll-speed="-2">
+			    </a>
+			</div>
+
+			<p data-scroll data-scroll-speed="-4"> <em>PRINT</em> <br>
+				Affiche des Journées Portes Ouvertes 2022
+			</p>
+		
+		</div>
+
+		<div class="projet2">
+			<p data-scroll data-scroll-speed="2"> <em>PRINT</em> <br>
+				ZUGZWANG, édition augmentée de médiation
+			</p>
+		
+			<div class="itemBox print">
+				<a href="#" class="zugzwang">
+				<img src="import/index/zugzwang.jpg" class="imageproj2" data-scroll data-scroll-speed="1">
+			    </a>
+			</div>
+		</div>
+
+		<div class="projet3">
+			<div class="itemBox photo">
+				<a href="#" class="photo">
+				<img src="import/index/photo.jpg" class="imageproj3" data-scroll data-scroll-speed="1">
+			    </a>
+			</div>
+			<p data-scroll data-scroll-speed="2"> <em>PHOTO</em> <br>
+				Retour Aux Sources, série photo
+			</p>
+		</div>
+
+		<div class="projet4">
+			<div class="itemBox print">
+				<a href="#" class="normo">
+				<img src="import/index/normo.jpg" class="imageproj4">
+			    </a>
+			</div>
+			<p > <em>PRINT</em> <br>
+				TOPO SENSO SONO : Normographe et Partition Sonore
+			</p>
+		</div>
+
+		<div class="projet5">
+			<p> <em>DIGITAL</em> <br>
+				Affiche Bleue, collage numérique et analogique
+			</p>
+		
+			<div class="itemBox digital">
+				<a href="#" class="collage">
+				<img src="import/index/collage.jpg" class="imageproj5" data-scroll data-scroll-speed="-1">
+			    </a>
+			</div>
+		</div>
+
+
+		<!-- <div class="projet2">
+			<div class="itemBox print">
+				<a href="#" class="zugzwang">
+				<img src="import/index/zugzwang.jpg" class="imageproj2" data-scroll data-scroll-speed="1">
+			    </a>
+			</div>
+		</div>
+
+		<div class="projet2">
+			<div class="itemBox print">
+				<a href="#" class="zugzwang">
+				<img src="import/index/zugzwang.jpg" class="imageproj2" data-scroll data-scroll-speed="1">
+			    </a>
+			</div>
+		</div>
+ -->
+
+
+
+
+
+	</div>
+</div>
+
+<script type="text/javascript">
+	var logo = document.querySelector('.menulogo');
+	var menu = document.querySelector('.menu');
+	var container = document.querySelector ('.container')
+
+
+	logo.addEventListener('click', function(){
+		menu.classList.toggle('showmenu');
+		container.classList.toggle('showcontainer');
+	})
+</script>
+
+<!-- /*script pour le scroll smooth sur les photos */ -->
+
+<script src="JS/locomotive-scroll.min.js"></script>
+
+<script>
+    const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+	});
+
+</script>
+
+</body>
+</html>
